@@ -32,6 +32,7 @@ clean:
 	rm -f client.exe
 	rm -f server.exe
 	rm -f ${OBJECTS}
+	rm -f depend
 
 client: ${COBJECTS}
 	-@echo "--- Building Client ---"
