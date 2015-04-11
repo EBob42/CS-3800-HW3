@@ -24,11 +24,7 @@ SOBJECTS = $(SERVER:%.cpp=%.o)
 
 default: all
 
-all:
-	-@echo "--- Building Client ---"
-	${CXX} ${CXXFLAGS} ${COBJECTS} -o client.exe
-	-@echo "--- Building Server ---"
-	${CXX} ${CXXFLAGS} ${SOBJECTS} -o server.exe
+all: client server
 
 clean:
 	-@echo "--- Cleaning ---"
@@ -37,11 +33,11 @@ clean:
 	rm -f server.exe
 	rm -f ${OBJECTS}
 
-client:
+client: ${COBJECTS}
 	-@echo "--- Building Client ---"
 	${CXX} ${CXXFLAGS} ${COBJECTS} -o client.exe
 
-server:
+server: ${SOBJECTS}
 	-@echo "--- Building Server ---"
 	${CXX} ${CXXFLAGS} ${SOBJECTS} -o server.exe
 
