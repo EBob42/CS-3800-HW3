@@ -4,7 +4,12 @@
  * Brief: Main executable for the server                                       *
 *******************************************************************************/
 
+#include <iostream>
+using namespace std;
+
 int main()
 {
-  return 0;
+    cout << "I'm the server!" << endl;
+    
+    return 0;
 }

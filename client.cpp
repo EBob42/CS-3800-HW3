@@ -4,7 +4,12 @@
  * Brief: Main executable for the client                                       *
 *******************************************************************************/
 
+#include <iostream>
+using namespace std;
+
 int main()
 {
-  return 0;
+    cout << "I'm the client!" << endl;
+    
+    return 0;
 }
