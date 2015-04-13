@@ -20,7 +20,7 @@ SOBJECTS = $(SERVER:%.cpp=%.o)
 
 %.o: %.cpp
 	-@echo "--- Compiling $< ---"
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	@$(CXX) $(CXXFLAGS) -c $< -o $@
 
 default: all
 
@@ -36,11 +36,11 @@ clean:
 
 client: ${COBJECTS}
 	-@echo "--- Building Client ---"
-	${CXX} ${CXXFLAGS} ${COBJECTS} -o client.exe
+	@${CXX} ${CXXFLAGS} ${COBJECTS} -o client.exe
 
 server: ${SOBJECTS}
 	-@echo "--- Building Server ---"
-	${CXX} ${CXXFLAGS} ${SOBJECTS} -o server.exe
+	@${CXX} ${CXXFLAGS} ${SOBJECTS} -o server.exe
 
 depend: $(SOURCES) $(HEADERS)
 	-@echo "--- Including dependencies ---"
