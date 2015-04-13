@@ -5,7 +5,7 @@
 ################################################################################
 
 CXX = /usr/bin/g++
-CXXFLAGS = -g -Wall -Wextra -pedantic-errors
+CXXFLAGS = -g -Wall -Wextra -pedantic-errors -pthread
 
 SOURCES = $(wildcard *.cpp)
 
