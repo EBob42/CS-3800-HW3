@@ -1,15 +1,8 @@
 /*******************************************************************************
- * File: server.cpp                                                            *
+ * File: s_funcs.cpp                                                           *
  * Authors: Eric Hopkins and Zack Brinkley                                     *
- * Brief: Main executable for the server                                       *
+ * Brief: Supplementary functions for the server                               *
 *******************************************************************************/
 
 #include "server.h"
-using namespace std;
 
-int main()
-{
-    cout << "I'm the server!" << endl;
-    
-    return 0;
-}

@@ -1,15 +1,7 @@
 /*******************************************************************************
- * File: client.cpp                                                            *
+ * File: c_funcs.cpp                                                           *
  * Authors: Eric Hopkins and Zack Brinkley                                     *
- * Brief: Main executable for the client                                       *
+ * Brief: Supplementary Functions for the client                               *
 *******************************************************************************/
 
 #include "client.h"
-using namespace std;
-
-int main()
-{
-    cout << "I'm the client!" << endl;
-    
-    return 0;
-}
