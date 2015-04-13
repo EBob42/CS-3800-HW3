@@ -9,8 +9,8 @@ CXXFLAGS = -g -Wall -Wextra -pedantic-errors -pthread
 
 SOURCES = $(wildcard *.cpp)
 
-CLIENT = client.cpp
-SERVER = server.cpp
+CLIENT = client.cpp c_funcs.cpp
+SERVER = server.cpp s_funcs.cpp
 
 HEADERS = $(wildcard *.h)
 OBJECTS = $(SOURCES:%.cpp=%.o)
