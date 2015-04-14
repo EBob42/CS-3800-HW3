@@ -7,9 +7,20 @@
 #include "server.h"
 using namespace std;
 
+
+void* client_handler (void*);
+
+
 int main()
 {
-    cout << "I'm the server!" << endl;
+    
     
     return 0;
+}
+
+
+void* client_handler (void*)
+{
+    
+    return NULL;
 }

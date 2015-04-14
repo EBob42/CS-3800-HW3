@@ -5,3 +5,9 @@
 *******************************************************************************/
 
 #include "client.h"
+using namespace std;
+
+void int_blocker (int)
+{
+    cout << "\nPlease use /exit, /quit, or /part to leave the chatroom." << endl;
+}
