@@ -14,9 +14,9 @@ void* client_handler (void*);
 int main()
 {
     int s;
-    struct sockaddr_in server = {AF_INET, htons(SERVER_PORT)};
+    struct sockaddr_in server = {AF_INET, htons(DEFAULT_PORT)};
     
-    if ((s = socket(AF_INET, SOCK_STREAM, 0) == -1)
+    if ((s = socket(AF_INET, SOCK_STREAM, 0)) == -1)
     {
         cerr << "Could not create socket" << endl;
     }
