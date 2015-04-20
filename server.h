@@ -14,3 +14,13 @@
 
 const int MAX_CLIENTS = 10;
 const unsigned int DEFAULT_PORT = 22222;
+
+struct Client
+{
+    int sd;
+    bool active;
+    pthread_t tid;
+    sockaddr_in addr;
+    
+    Client() {active = false; addr = {AF_INET};}
+};
