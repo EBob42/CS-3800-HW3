@@ -7,12 +7,6 @@
 #include "client.h"
 using namespace std;
 
-
-void* writeOut (void*);
-
-void* readIn (void*);
-
-
 int main()
 {
     string server_name;
@@ -37,16 +31,4 @@ int main()
     //TODO: Actually connect to server and what-not
     
     return 0;
-}
-
-void* readIn (void*)
-{
-    
-    return NULL;
-}
-
-void* writeOut (void*)
-{
-    
-    return NULL;
 }

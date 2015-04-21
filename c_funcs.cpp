@@ -11,3 +11,15 @@ void int_blocker (int)
 {
     cout << "\nPlease use /exit, /quit, or /part to leave the chatroom." << endl;
 }
+
+void* readIn (void*)
+{
+    
+    return NULL;
+}
+
+void* writeOut (void*)
+{
+    
+    return NULL;
+}
