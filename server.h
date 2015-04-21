@@ -16,11 +16,12 @@
 #ifndef SERVER_H
 #define SERVER_H
 const int MAX_CLIENTS = 10;
-const unsigned int DEFAULT_PORT = 22222;
+const unsigned int DEFAULT_PORT = 33333;
 
 void int_blocker(int);
 void* client_handler (void*);
 
+// Data for each client thread
 struct Client
 {
     int sd;

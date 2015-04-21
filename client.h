@@ -7,6 +7,8 @@
 #include <iostream>
 #include <csignal>
 #include <cstring>
+#include <string>
+#include <unistd.h>
 #include <pthread.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -15,7 +17,16 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 
-const unsigned int DEFAULT_PORT = 22222;
+const unsigned int DEFAULT_PORT = 33333;
+
+// Data to be passed to the writing thread
+struct Data
+{
+    std::string name;
+    pthread_t tid;
+};
+
+extern int s;
 
 void int_blocker (int);
 

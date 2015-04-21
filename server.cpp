@@ -17,7 +17,8 @@ int main()
     int s;
     struct sockaddr_in server = {AF_INET, htons(DEFAULT_PORT)};
     clients[0].s = &s;
-    
+
+//----------------- Create and Init Socket ---------------------------//
     if ((s = socket(AF_INET, SOCK_STREAM, 0)) == -1)
     {
         cerr << "Could not create socket" << endl;
@@ -38,6 +39,7 @@ int main()
     
     signal (SIGINT, int_blocker);
     
+//-------------------- Spawn threads for handling clients ------------//
     for (int i = 0; i < MAX_CLIENTS; ++i)
     {
         if (pthread_create(&clients[i].tid, NULL, client_handler, &clients[i]))
@@ -47,6 +49,7 @@ int main()
         }
     }
     
+//------------------- Terminate Gracefully as the server closes ------//
     for (int i = 0; i < MAX_CLIENTS; ++i)
     {
         void** v = NULL;
