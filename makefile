@@ -1,6 +1,6 @@
 ################################################################################
 # File:   makefile                                                             #
-# Author: Eric Hopkins      CS3800                                             #
+# Author: Eric Hopkins and Zack Brinkley      CS3800                           #
 # Brief:  Makefile for Assignment 3                                            #
 ################################################################################
 
