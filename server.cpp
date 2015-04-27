@@ -37,6 +37,8 @@ int main()
         exit(1);
     }
     
+    cout << "Server is now active" << endl;
+    
     signal (SIGINT, int_blocker);
     
 //-------------------- Spawn threads for handling clients ------------//
